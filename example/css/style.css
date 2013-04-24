@@ -1,0 +1,294 @@
+@import "normalize.css";
+
+html {
+background: linear-gradient(to bottom, #0090AE 145px, white 145px, white) no-repeat scroll 0 0%, none repeat scroll 0 0 #4A5E69;
+}
+
+body {
+width: 960px;
+margin: auto;
+font-family: helvetica, verdana, arial;
+font-size: 14px;
+color: #082c51;
+line-height: 1.5em;
+}
+
+
+#header {
+width: 960px;
+height: 145px;
+margin: auto;
+position: relative;
+background: #0090AE;
+}
+
+#logo {
+position: absolute;
+top: 57px;
+left: 8px;
+background: url(logo.png) left top no-repeat;
+overflow: hidden;
+width: 312px;
+height: 37px;
+}
+
+#logo h1 {
+margin: 0;
+height: 100%;
+}
+
+
+
+
+/* -----------------------------  */
+
+
+#topnav {
+height: 30px;
+position: absolute;
+top: 110px;
+z-index: 10; /* to keep sub menus above any positioned elements further down in the markup */
+width: 100%;
+text-align: center;
+
+}
+
+
+.menu, .menu ul {
+margin: 0;
+padding:0;
+list-style-type: none;
+}
+
+
+.menu > li > a .arrow {
+display:none;
+}
+
+.menu .arrow {
+font-size: 10px;
+padding-left: 2px;
+vertical-align: 2px;
+color: #0090AE;
+}
+
+
+
+.menu >  li {
+font-size: 13px;
+height: 100%;
+line-height: 31px;
+position relative;
+display: inline-block;
+}
+
+.menu a
+{
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	height: 100%;
+}
+
+
+
+.menu > li > a {
+padding: 0px 5px 0px 5px;
+}
+
+.menu > li > a:hover,
+.menu > li:hover {
+background: #00819c;
+}
+
+
+
+
+.menu li ul {
+text-align: left;
+background: #ececec;
+box-shadow: 3px 3px 3px #aaa;
+}
+
+
+
+.menu li > ul {
+display:none;
+position: absolute;
+
+min-width: 150px;
+max-width: 220px;
+}
+
+
+
+
+.menu li:hover > ul {
+display:block;
+z-index: 20;
+}
+
+
+
+.menu li ul li {
+float: none;
+line-height: 1em;
+}
+
+
+
+.menu li ul li a {
+color: #082c51;
+text-transform: none;
+display:block;
+padding: 10px 22px 10px 12px;
+}
+
+
+/* 
+When on a 2nd or 3rd level item
+keep the items you went through
+to get there highlighted with the
+light hover color and dark link text.
+*/
+.menu li ul li a:hover,
+.menu > li li:hover,
+.menu > li li:hover > a
+{
+background: gold;
+color: navy;
+}
+
+
+
+.menu ul .arrow{
+-webkit-transform: rotate(-90deg);
+transform: rotate(-90deg);
+position: absolute;
+top: 30%;
+right: 5px;
+}
+
+
+/* third level */
+.menu li ul li{
+position: relative;
+}
+
+
+.menu li ul li ul {
+position: absolute;
+top:0;
+left: 100%;
+min-width: 220px;
+}
+
+
+/* -----------------------------  */
+
+#content {
+width: 700px;
+padding-top: 20px;
+margin-right: 70px;
+float: right;
+}
+
+
+
+
+#sidebar {
+background: #E5E9EA;
+border-radius: 5px;
+width: 160px;
+margin: 14px 0 14px 10px;
+}
+
+#subnav {
+
+}
+
+
+#section-title {
+display:block;
+font-family: helvetica;
+font-size: 10px;
+background: #4a5e69;
+color: #fff;
+text-align:center;
+text-transform: uppercase;
+position: relative;
+padding: 6px;
+text-decoration: none;
+margin-bottom: 30px;
+border-radius: 3px;
+}
+
+
+#section-title:after { 
+top: 100%; 
+border: solid transparent; 
+content: " "; 
+height: 0; 
+width: 0; position: absolute; 
+pointer-events: none; 
+}
+
+#section-title:after { 
+border-color: #4A5E69 rgba(136, 183, 213, 0) rgba(136, 183, 213, 0);
+border-width: 14px;
+left: 20%;
+margin-left: -20px;
+transform: scaleX(0.5);
+transform-origin: 0 0 0;
+}
+
+
+#subnav a {
+text-decoration: none;
+color: #082c51;
+display: block;
+padding-top:    0.6em;
+padding-bottom: 0.6em;
+line-height: 1.1em;
+transition: 0.1s linear;
+}
+
+#subnav a:hover, #subnav .active {
+background: #fff;
+}
+
+
+
+#subnav, #subnav ul {
+list-style-type: none;
+margin:0;
+padding:0 0 0 0px;
+}
+
+#subnav li a {
+padding-left: 10px;
+}
+
+#subnav li ul a {
+	padding-left: 20px;
+	font-size: 0.9em;
+}
+
+#subnav ul ul a {
+	padding-left: 28px;
+	font-size: 0.8em;
+	line-height: 0.4em;
+}
+
+
+
+h1 {
+font-size: 26px;
+margin-top: 0;
+}
+
+p {
+margin: 0 0 1em 0;
+}
+
+
