@@ -12,7 +12,7 @@
 
 <div id="content">
 
-<h1>Content Heading</h1>
+<h2>Content Heading</h2>
 
 <p>
 Perhaps a re-engineering of your current world view will re-energize your online nomenclature to enable a new holistic interactive enterprise internet communication solution. 
